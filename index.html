@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/topsection.css">
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="topimg">
+        <img src="https://tpc.googlesyndication.com/simgad/5503378334793473371" alt="">
+    </div>
+    <div id="logo">
+        <div>Wednesday, Jul 20, 2022</div>
+        <div>
+            <img src="https://www.outlookindia.com/images/home_new_v4/logo_outlook.svg" alt="">
+            <div id="info">
+                <div>LOGIN</div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div>SIGNUP</div>
+            </div>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/Outlookindia" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt=""></a>
+            <a href="https://twitter.com/outlookindia/" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt=""></a>
+            <a href="https://www.instagram.com/outlookindia/" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt=""></a>
+            <a href="https://www.youtube.com/user/OutlookMagazine" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt=""></a>
+        </div>
+    </div>
+
+    <nav>
+        <div>
+            <div id="navbar">
+                <div><a href="http://127.0.0.1:5500/index.html">HOME</a></div>
+                <div><a href="">OUTLOOK</a></div>
+                <div><a href="">BUSINESS</a></div>
+                <div><a href="">MONEY</a></div>
+                <div><a href="">CRYPTO</a></div>
+                <div><a href="">TRAVEL</a></div>
+                <div><a href="">SPORT</a></div>
+                <div><a href="">VIDEOS</a></div>
+                <div><a href="">ENTERTAINMENT</a></div>
+                <div><a href="">PHOTOS</a></div>
+                <div><a href="">MAGAZINE</a></div>
+                <div><a href="">HINDI</a></div>
+                <div><a href="">OTHERS</a></div>
+                <div><a href="">AGRITECH</a></div>
+                <div><a href="">CORNER</a></div>
+                <img src="https://www.outlookindia.com/images/home_new_v4/search_in_nav.svg" alt="">
+            </div>
+
+        </div>
+    </nav>
+</body>
+
+</html>
+
+<script>
+    let signindata=JSON.parse(localStorage.getItem("SigninData")) || []
+    console.log(signindata)
+    document.querySelector("#info>div:nth-child(1)").addEventListener("click",login)
+    document.querySelector("#info>div:nth-child(5)").addEventListener("click",signup)
+
+    function login(){
+        window.location.href="http://127.0.0.1:5500/login.html"
+    }
+    function signup(){
+        console.log("Pranay")
+        window.location.href="http://127.0.0.1:5500/signup.html"
+    }
+
+    if(signindata.length>0){
+        document.querySelector("#info").innerHTML="";
+        let name=document.createElement("div");
+        name.innerText=signindata[0]["Name"];
+        let blank1= document.createElement("div");
+        let blank2= document.createElement("div");
+        let logout=document.createElement("div");
+        logout.innerText="Log Out"
+        document.querySelector("#info").append(blank1,name,blank2,logout)
+    }
+    
+
+    document.querySelector("#info>div:nth-child(4)").addEventListener("click", logout)
+
+    function logout(){
+        signindata.pop();
+        localStorage.setItem("SigninData", JSON.stringify(signindata))
+        window.location.href="http://127.0.0.1:5500/index.html"
+    }
+
+</script>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="/topsection.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        form {
+            width: 25%;
+            margin: 40px auto;
+            text-align: center;
+            box-shadow: 3px 3px 8px gray;
+            padding: 30px;
+        }
+
+        h1 {
+            margin: 10px auto 30px auto;
+            color: brown;
+            font-weight: bolder;
+        }
+
+        input {
+            width: 80%;
+            height: 30px;
+            font-size: large;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(8, 8, 95);
+            color: whitesmoke;
+            height: 35px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        label {
+            margin: auto 150px auto 0;
+            font-weight: bold;
+        }
+
+        #signup {
+            width: 25%;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        #signup>span {
+            color: blue;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topimg">
+        <img src="https://tpc.googlesyndication.com/simgad/5503378334793473371" alt="">
+    </div>
+    <div id="logo">
+        <div>Wednesday, Jul 20, 2022</div>
+        <div>
+            <img src="https://www.outlookindia.com/images/home_new_v4/logo_outlook.svg" alt="">
+        </div>
+        <div>
+            <a href="https://www.facebook.com/Outlookindia" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt=""></a>
+            <a href="https://twitter.com/outlookindia/" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt=""></a>
+            <a href="https://www.instagram.com/outlookindia/" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt=""></a>
+            <a href="https://www.youtube.com/user/OutlookMagazine" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt=""></a>
+        </div>
+    </div>
+    <nav>
+        <div>
+            <div id="navbar">
+                <div><a href="http://127.0.0.1:5500/index.html">HOME</a></div>
+                <div><a href="">OUTLOOK</a></div>
+                <div><a href="">BUSINESS</a></div>
+                <div><a href="">MONEY</a></div>
+                <div><a href="">CRYPTO</a></div>
+                <div><a href="">TRAVEL</a></div>
+                <div><a href="">SPORT</a></div>
+                <div><a href="">VIDEOS</a></div>
+                <div><a href="">ENTERTAINMENT</a></div>
+                <div><a href="">PHOTOS</a></div>
+                <div><a href="">MAGAZINE</a></div>
+                <div><a href="">HINDI</a></div>
+                <div><a href="">OTHERS</a></div>
+                <div><a href="">AGRITECH</a></div>
+                <div><a href="">CORNER</a></div>
+                <img src="https://www.outlookindia.com/images/home_new_v4/search_in_nav.svg" alt="">
+            </div>
+
+        </div>
+    </nav>
+
+    <form>
+        <h1>SIGN IN TO OUTLOOK</h1>
+        <label for="email">Enter E-mail Or Mobile</label><br>
+        <input type="text" placeholder="E-mail/Mobile" id="email"><br><br>
+        <label for="password">Enter Your Password </label><br>
+        <input type="password" placeholder="Password" id="password"><br><br>
+        <input type="submit" id="submit">
+    </form>
+
+    <div id="signup">Don't have an Account? <span>Sign UP</span></div>
+</body>
+
+</html>
+
+<script>
+    let signupdata = JSON.parse(localStorage.getItem("SignupData")) || []
+    let signindata=JSON.parse(localStorage.getItem("SigninData")) || []
+    document.querySelector("form").addEventListener("submit", sub)
+
+    function sub(){
+        event.preventDefault()
+        let flag=false
+        let email=document.querySelector("#email").value;
+        let mobile=document.querySelector("#email").value;
+        let password=document.querySelector("#password").value;
+        for(let i=0; i<signupdata.length; i++){
+            if((signupdata[i]["E-mail"]==email && signupdata[i]["Password"]==password) || (signupdata[i]["Mobile"]==mobile && signupdata[i]["Password"]==password)){
+                signindata.push(signupdata[i]);
+                localStorage.setItem("SigninData", JSON.stringify(signindata))
+                flag=true
+                alert("Signin Successful");
+                window.location.href="http://127.0.0.1:5500/index.html";
+                return
+            }
+        }
+        if(flag==false){
+            alert("Enter Correct Detail");
+        }
+    }
+
+    document.querySelector("#signup>span").addEventListener("click", signup)
+
+    function signup(){
+        window.location.href="http://127.0.0.1:5500/signup.html"
+        
+    }
+
+
+
+
+</script>
