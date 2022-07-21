@@ -38,6 +38,8 @@
 
         #info>div {
             margin: 0 4px;
+            font-weight: bold;
+            color:rgb(8, 132, 14)
         }
 
         #info>div:nth-child(3) {
@@ -51,12 +53,13 @@
         nav>div{
             border-bottom: 1px solid rgb(228, 3, 3);
             margin: auto;
+            width: 100%;
         }
         #navbar>img{
             margin-left: 80px;
         }
 
-        #navbar {
+        #navbar{
             display: flex;
             width: 80%;
             margin: auto;
@@ -64,10 +67,16 @@
         }
 
         #navbar>div {
-            margin: 5px 10px;
+            margin: 5px 5px;
             font-weight: bold;
+            box-sizing: border-box;
         }
         a{
             color: rgb(90, 89, 89);
             text-decoration: none;
+            padding: 7px;
+            border-radius: 20px;
+        }
+        a:hover{
+            color:rgb(228, 87, 21);
         }
