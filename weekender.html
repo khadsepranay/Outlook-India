@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    
+    <title>Weekender</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        #weekender{
+            display: grid;
+            grid-template-columns: 2fr 4fr 3fr;
+            color:white;
+        }
+        #weekender>div>div{
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+            font-size: 14px;
+            font-weight: 900;
+        }
+        #weekender>div>a{
+            display: block;
+            text-decoration: none;
+            color:white;
+            width: 80%;
+            margin: auto;
+            line-height: 70px;
+        }
+        #weekender>div>a:hover{
+            color:yellow
+        }
+        #weekender>div>div:nth-child(1){
+            display: flex;
+            padding: 20px 20px;
+            justify-content: space-between;
+        }
+        #weekender>div:nth-child(1){
+            height: 100vh;
+            background-color: rgb(214, 35, 35);
+            position:sticky;
+            top:0
+        }
+        p{
+            font-family: 'Rubik Mono One', sans-serif;
+            font-size: x-large;
+            font-weight: 900;
+
+        }
+        p+p{
+            font-family: 'Rampart One', cursive;
+            font-size: 40px;
+            margin-top: -20px;
+        }
+        #weekender>div>div:nth-child(2){
+            text-align: center;
+            width: 80%;
+            margin: auto auto 50px auto;
+            padding:15px;
+            border: 1px solid white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .images>div,.images>img{
+            height: 100vh;
+            width: 100%;
+            color:black;
+        }
+        .images>div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .images div{
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="weekender">
+        <div>
+            <div>
+                <p>Outlook</p>
+                <p>Weekender</p>
+            </div>
+            <div>Back To Home</div>
+            <a href="#first">Uncitizened: Short Fiction On The Times</a>
+            <a href="#second">Book Review: Of Owning And Belonging</a>
+            <a href="#third">Poems: Of Clocktowers And Tripwires</a>
+            <a href="#fourth">Poems: A Passage Through India</a>
+            <a href="#fifth">Poems: Elegy Of An Origami Crow</a>
+            <a href="#sixth">Book Excerpt: I See The Face</a>
+        </div>
+        <div class="images">
+            <a name="first"></a>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/9_16/9_16_1/IMAGE_1658035943.webp" alt="">
+            <div><p>Book Review: Of Owning And Belonging</p></div>
+            <a name="third"></a>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/9_16/9_16_5/IMAGE_1658032337.webp" alt="">
+            <div><p>Poems: A Passage Through India</p></div>
+            <a name="fifth"></a>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/9_16/9_16_5/IMAGE_1658023864.webp" alt="">
+            <div><p>Book Excerpt: I See The Face</p></div>
+        </div>
+        <div class="images">
+            <div><p>Uncitizened: A Short Fiction On The Times We Live In</p></div>
+            <a name="second"></a>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/9_16/9_16_5/IMAGE_1658034828.webp" alt="">
+            <div><p>Poems: Of Clocktowers And Tripwires</p></div>
+            <a name="fourth"></a>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/9_16/9_16_1/IMAGE_1658032185.webp" alt="">
+            <div><p>Poems: Elegy Of An Origami Crow</p></div>
+            <a name="sixth"></a>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/9_16/9_16_5/IMAGE_1657945332.webp" alt="">
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("#weekender>div>div:nth-child(2)").addEventListener("click", back)
+
+    function back(){
+        window.location.href="http://127.0.0.1:5500/index.html"
+    }
+</script>
