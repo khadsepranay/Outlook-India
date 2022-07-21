@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/topsection.css">
+    <link rel="stylesheet" href="hoverOnNavbar.css">
+
+    <style>
+        p {
+            color: rgb(139, 131, 131)
+        }
+        #archieves>h4+p{
+            color:rgb(200, 4, 4)
+        }
+
+        #middlesection {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 25px;
+            width: 90%;
+            margin: 0 auto 40px auto;
+        }
+
+        #middlesection>div {
+            text-align: center;
+        }
+
+        #middlesection>div:nth-child(3) {
+            background-color: rgba(240, 234, 234, 0.434);
+        }
+
+        #middlesection div>img {
+            width: 100%;
+        }
+
+        #middlesection div>h3 {
+            margin: 15px auto;
+        }
+
+        #middlesection div>p,
+        p+p {
+            color: rgb(191, 9, 9)
+        }
+
+        span {
+            color: rgb(135, 119, 119);
+        }
+
+        #middlesection div img {
+            margin: 15px auto;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 5px 15px;
+            margin: 15px auto;
+        }
+
+        select {
+            width: 250px;
+            height: 30px;
+            font-size: 17px;
+        }
+
+        button+div {
+            border-bottom: 1px solid rgb(124, 123, 123);
+        }
+
+        #middlesection2 {
+            width: 90%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        #middlesection2 img {
+            width: 100%
+        }
+
+        #middlesection2,
+        img,
+        h4,
+        p {
+            margin: 10px auto;
+        }
+
+        #middlesection3 {
+            width: 90%;
+            margin: 70px auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 40px
+        }
+
+        #middlesection3>div:nth-child(1) {
+            background-color: rgba(221, 214, 214, 0.458);
+            text-align: center;
+        }
+
+        h2+div {
+            border-bottom: 1px solid rgb(42, 37, 37);
+            margin: 10px auto;
+        }
+
+        #stories {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        #stories>div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px
+        }
+
+        #stories>div>img {
+            width: 100%;
+        }
+
+        #stories p {
+            color: rgb(203, 14, 14)
+        }
+        p+div,#related>div>h4+div{
+            border-bottom: 1px solid rgb(206, 199, 199);
+            margin: 30px auto;
+        }
+
+        #related{
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap:30px;
+        }
+        #related>div>img{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="topimg">
+        <img src="https://tpc.googlesyndication.com/simgad/5503378334793473371" alt="">
+    </div>
+    <div id="logo">
+        <div>Wednesday, Jul 20, 2022</div>
+        <div>
+            <img src="https://www.outlookindia.com/images/home_new_v4/logo_outlook.svg" alt="">
+        </div>
+        <div>
+            <a href="https://www.facebook.com/Outlookindia" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt=""></a>
+            <a href="https://twitter.com/outlookindia/" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt=""></a>
+            <a href="https://www.instagram.com/outlookindia/" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt=""></a>
+            <a href="https://www.youtube.com/user/OutlookMagazine" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt=""></a>
+        </div>
+    </div>
+
+    <nav>
+        <div>
+            <div id="navbar">
+                <div><a href="http://127.0.0.1:5500/index.html">HOME</a></div>
+                <div><a href="">OUTLOOK</a></div>
+                <div><a href="">BUSINESS</a></div>
+                <div><a href="">MONEY</a></div>
+                <div><a href="">CRYPTO</a></div>
+                <div><a href="">TRAVEL</a></div>
+                <div><a href="">SPORT</a></div>
+                <div><a href="">VIDEOS</a></div>
+                <div><a href="">ENTERTAINMENT</a></div>
+                <div><a href="">PHOTOS</a></div>
+                <div><a href="">MAGAZINE</a></div>
+                <div><a href="">HINDI</a></div>
+                <div><a href="">OTHERS</a></div>
+                <div><a href="">AGRITECH</a></div>
+                <div><a href="">CORNER</a></div>
+                <img src="https://www.outlookindia.com/images/home_new_v4/search_in_nav.svg" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <div id="outlook">
+        <div>Magazine</div>
+        <div>Weekender</div>
+        <div>India News</div>
+        <div>International News</div>
+        <div>Culture</div>
+        <div>Study Abroad</div>
+    </div>
+
+    <div id="middlesection">
+        <div>
+            <div>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1657770148.webp" alt="">
+                <h3>Rap & Rage: Gaana, Gun And Gangster In Punjab's Music</h3>
+                <p>ASHUTOSH SHARMA / <br> <span>Last Updated at 10:26 am</span> </p>
+            </div>
+            <div>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1657784587.webp" alt="">
+                <h3>Split Wide Open: Old Scars, Fresh Wounds Put Udaipur On The Edge</h3>
+                <p>RAKHI BOSE / <br><span>Last Updated at 11:42 am</span></p>
+            </div>
+        </div>
+
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1657767492.webp" alt="">
+            <p>MOOSEWALA</p>
+            <h1>Bullets And The Balladeer: The Method In The Music Of Sidhu Moosewala</h1>
+            <h3>In the end, Sidhu Moosewala fell victim to the characters he imagined and extolled through his music
+            </h3>
+            <p>ASHUTOSH SHARMA / <br><span>Last Updated at 10:24 am</span></p>
+        </div>
+
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/9_16/9_16_3/IMAGE_1657851526.webp?v=20220401_c"
+                alt="">
+            <p>25 July 2022</p>
+            <p>Sidhu Moosewala was loved and reviled in equal measure: a singer who brought joy to many with his
+                compositions, but also criticised for glamourising guns and espousing toxic masculinity. As his murder
+                puts the spotlight back on Punjab's flourishing hip-hop scene, we try to deconstruct the man and the
+                musician.</p>
+            <button>Subscribe Now</button>
+            <div></div>
+            <h3>Archieve</h3>
+            <select name="" id="">
+                <option value="">Select Year</option>
+                <option value="">2022</option>
+                <option value="">2021</option>
+                <option value="">2020</option>
+                <option value="">2019</option>
+                <option value="">2018</option>
+                <option value="">2017</option>
+                <option value="">2016</option>
+                <option value="">2015</option>
+                <option value="">2014</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div id="middlesection2">
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1657777454.webp" alt="">
+            <h4>
+                New Dawn In Darjeeling: Recent Developments Hint At Flourishing Of Multi-party Politics In The Hills
+            </h4>
+            <p>With two new parties sweeping polls on development planks instead of demand for statehood, older forces
+                are having it tough</p>
+            <p>SNIGDHENDU BHATTACHARYA / <br><span>Last Updated at 10:31 am</span></p>
+        </div>
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/Substrata_1657778608.webp" alt="">
+            <h4>Poems: Cyber Kaali</h4>
+            <p>As the poet and the director of the film 'Kaali' (2022) Leena Manimekalai pens down the binary being of
+                the supreme, her words render a voice, 'a...</p>
+            <p>LEENA MANIMEKALAI / <br><span>Last Updated at 10:30 am</span></p>
+        </div>
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1657778895.webp" alt="">
+            <h4>I Understand Kali As My Denied Existence: Leena Manimekalai</h4>
+            <p>Before she sits down on a bench at night and shares a cigarette with two men of African descent, the
+                woman dressed as a goddess had been loitering...</p>
+            <p>CHINKI SINHA / <br><span>Last Updated at 10:29 am</span></p>
+        </div>
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1657780558.webp" alt="">
+            <h4>'The Miniaturist Of Junagadh' Movie Review: A Mosaic Of Silence</h4>
+            <p>Director Kaushal Oza delivers a poignant tale of a visually challenged artist, his family and their quiet
+                defiance in a communal setting</p>
+            <p>IPSHITA MITRA / <br><span>Last Updated at 1:04 pm</span></p>
+        </div>
+    </div>
+
+    <div id="middlesection3">
+        <div>
+            <p>Advertise</p>
+            <video
+                src="https://imgnew.outlookindia.com/uploadimage/library/free_files/others/IDFC_I_2022_07_16_113536.mp4"
+                autoplay controls muted></video>
+        </div>
+
+        <div>
+            <h2>Other Stories</h2>
+            <div></div>
+            <div id="stories">
+                <div>
+                    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1657125451.webp"
+                        alt="">
+                    <div>
+                        <h4>Floods In Bihar: The Rain Speaks To Us, But Are We Listening?</h4>
+                        <p>ABHISHEK ANICCA /<span>Last Updated at 12:02 pm</span></p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1657122815.webp"
+                        alt="">
+                    <div>
+                        <h4>Rimjhim Girey Saawan: How Monsoons Make A Splash In Indian Films</h4>
+                        <p>M.K. RAGHAVENDRA /<span>Last Updated at 12:04 pm</span></p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1657124114.webp"
+                        alt="">
+                    <div>
+                        <h4>Drenched In Music: Indian Monsoons Birth Melodies And Freedom</h4>
+                        <p>VIDYA SHAH /<span>Last Updated at 12:03 pm</span></p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1657161112.webp"
+                        alt="">
+                    <div>
+                        <h4>Moody Monsoon: When The Rains Don't Heal The Pain</h4>
+                        <p>KINSHUK GUPTA /<span>Last Updated at 12:00 pm</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="archieves">
+            <h2>Archieves</h2>
+            <div></div>
+            <h4>1. Monsoon In Nagaland: Dust In The Wind, Mud On The Ground</h4>
+            <p>Beni Sumer Yanthan - <span>15 July 2022</span></p>
+            <div></div>
+            <h4>2. A Dirge For Monsoon: It Doesn’t Rain Like That Anymore</h4>
+            <p>Pratyaksha Sinha - <span>15 July 2022</span></p>
+            <div></div>
+            <h4>3. Monsoons And The Interpreter Of Melodies</h4>
+            <p>Mrinal Pande - <span>15 July 2022</span></p>
+            <div></div>
+            <h4>4. Monsoon In Northeast: How Climate Change Is Affecting Rainfall</h4>
+            <p>Syeda Ambia Zahan - <span>15 July 2022</span></p>
+            <div></div>
+            <h4>5. Dam It! Altering River Flow Does No One Any Good</h4>
+            <p>Mayank Jain Parichha - <span>15 July 2022</span></p>
+            <div></div>
+            <h4>6. ‘Rains Are Different For Those Who Experience It, And For Those Who Observe It’</h4>
+            <p>Suraj Yengde - <span>15 July 2022</span></p>
+        </div>
+    </div>
+
+    <div id="related">
+        <div>
+            <h2>RECOMMENDED</h2>
+            <div></div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1654238872.webp" alt="">
+            <h4>Translation In World Literature: Will International Booker Prize Open A Global Window To Hindi Books?</h4>
+            <div></div>
+            <h4>Spirit Of Shaheen Bagh: Portraits Of Courage And Sisterhood</h4>
+            <div></div>
+            <h4>The Muslim Equation: In The Crosshairs, At The Crossroads</h4>
+        </div>
+        <div>
+            <h2>FROM THE LAST ISSUE</h2>
+            <div></div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1657122815.webp" alt="">
+            <h4>Rimjhim Girey Saawan: How Monsoons Make A Splash In Indian Films</h4>
+            <div></div>
+            <h4>Drenched In Music: Indian Monsoons Birth Melodies And Freedom</h4>
+            <div></div>
+            <h4>Floods In Bihar: The Rain Speaks To Us, But Are We Listening?</h4>
+        </div>
+        <div>
+            <h2>MOST READ</h2>
+            <div></div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1651720623.webp" alt="">
+            <h4>https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1651720623.webp</h4>
+            <div></div>
+            <h4>I, Me, Myself: Indian Women Pushing Back Against Social Narratives To Be Single</h4>
+            <div></div>
+            <h4>Indians Still Tied To Age-old Social Prejudices In Matters Of The Heart</h4>
+        </div>
+        <div>
+            <h2>OPINION</h2>
+            <div></div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1654690183.webp" alt="">
+            <h4>The Green Corridors: Can Goa's Khazans Mitigate The Effects Of Climate Change?</h4>
+            <div></div>
+            <h4>Drug Traffickers, Land Sharks And Other Lumpen Elements Now Rule The Roost In Goa</h4>
+            <div></div>
+            <h4>Journey Of An Accidental Translator: Two Decades Of ‘Bengalification’ And A Long Engagement With Bangla Language</h4>
+        </div>
+        <div>
+            <h2>ENTERTAINMENT</h2>
+            <div></div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1653041796.webp" alt="">
+            <h4>Starved Of Fresh Content, Bollywood Is Desperately Looking For New Ideas</h4>
+            <div></div>
+            <h4>‘Indian’ Cinema And Dravida Nadu</h4>
+            <div></div>
+            <h4>The Great Mollywood Kitchen: How OTTs Empower Regional Cinemas To Compete With Bollywood</h4>
+        </div>
+        <div>
+            <h2>LONG READ</h2>
+            <div></div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1652262611.webp" alt="">
+            <h4>Flash Fiction: Dirt</h4>
+            <div></div>
+            <h4>Diary | How The Pandemic Disrupted A Teenager’s World</h4>
+            <div></div>
+            <h4>Federalism And The Idea Of Regionalism</h4>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+
+    document.querySelector("#navbar>div:nth-child(2)").addEventListener("mouseenter", outlook)
+
+    function outlook() {
+        document.querySelector("#outlook").style.display = "flex";
+    }
+    document.querySelector("#outlook>div").addEventListener("click", mag)
+
+    function mag() {
+        window.location.href = "http://127.0.0.1:5500/magazine.html"
+    }
+
+</script>
