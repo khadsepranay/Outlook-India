@@ -10,9 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/topsection.css">
-
-    <style>
-    </style>
+    <link rel="stylesheet" href="hoverOnNavbar.css">
 </head>
 
 <body>
@@ -20,7 +18,7 @@
         <img src="https://tpc.googlesyndication.com/simgad/5503378334793473371" alt="">
     </div>
     <div id="logo">
-        <div>Wednesday, Jul 20, 2022</div>
+        <div>Wednesday, 20 July 2022</div>
         <div>
             <img src="https://www.outlookindia.com/images/home_new_v4/logo_outlook.svg" alt="">
             <div id="info">
@@ -66,6 +64,16 @@
 
         </div>
     </nav>
+
+
+    <div id="outlook">
+        <div>Magazine</div>
+        <div>Weekender</div>
+        <div>India News</div>
+        <div>International News</div>
+        <div>Culture</div>
+        <div>Study Abroad</div>
+    </div>
 </body>
 
 </html>
@@ -103,5 +111,37 @@
         localStorage.setItem("SigninData", JSON.stringify(signindata))
         window.location.href="http://127.0.0.1:5500/index.html"
     }
+
+    document.querySelector("#navbar>div:nth-child(2)").addEventListener("mouseenter",outlook)
+
+    function outlook(){
+        document.querySelector("#outlook").style.display="flex";
+    }
+    document.querySelector("#outlook>div").addEventListener("click", mag)
+
+    function mag(){
+        if(signindata.length>0){
+            window.location.href="http://127.0.0.1:5500/magazine.html"
+        }
+        else{
+            alert("Please Log In First");
+            return
+        }
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </script>
