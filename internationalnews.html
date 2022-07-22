@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/topsection.css">
+    <link rel="stylesheet" href="hoverOnNavbar.css">
+
+    <style>
+        h1 {
+            width: 90%;
+            margin: auto;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            font-size: larger;
+            margin: 15px auto;
+        }
+
+        #newstop {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px
+        }
+
+        #newstop img {
+            width: 100%;
+        }
+
+        span {
+            color: rgb(192, 18, 18);
+        }
+
+        #newstop>div div {
+            border-bottom: 1px solid rgb(182, 175, 175);
+            margin: 15px auto;
+        }
+
+        p {
+            color: rgb(102, 101, 101);
+        }
+
+        #advertise {
+            height: 300px;
+            background-color: rgb(239, 234, 234);
+            text-align: center;
+            border: 1px solid rgb(212, 209, 209);
+        }
+
+        #shortnews {
+            width: 90%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 35px
+        }
+        #shortnews>div:nth-child(1){
+            margin-top: 19px;
+        }
+        #shortnews>div:nth-child(1){
+            margin-top: px;
+        }
+
+        #shortnews>div:nth-child(1)>div {
+            display: grid;
+            grid-template-columns: 1fr 2fr 3fr;
+            gap: 30px;
+        }
+
+        #shortnews>div>div img {
+            width: 100%;
+        }
+
+        #shortnews>div>div {
+            padding: 20px;
+            border-bottom: 1px solid rgb(186, 184, 184);
+        }
+
+        button {
+            width: 120px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        h3+button{
+            background-color: rgb(141, 13, 13);
+            border-radius: 15px;
+            color:white;
+            font-size: 15px;
+            border: none;
+        }
+        button+button{
+            background-color: rgb(7, 110, 33);
+            border-radius: 15px;
+            color:white;
+            font-size: 15px;
+            border: none;
+
+        }
+        #photo h3{
+            color:rgb(7, 69, 131);
+            font-weight: bolder;
+            font-size: 35px;
+            text-align: center;
+        }
+        h3{
+            margin-top: 30px;
+        }
+        #videos~div{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            align-items: center;
+        }
+        video{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topimg">
+        <img src="https://tpc.googlesyndication.com/simgad/5503378334793473371" alt="">
+    </div>
+    <div id="logo">
+        <div>Wednesday, 20 July 2022</div>
+        <div>
+            <img src="https://www.outlookindia.com/images/home_new_v4/logo_outlook.svg" alt="">
+            <div id="info"></div>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/Outlookindia" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt=""></a>
+            <a href="https://twitter.com/outlookindia/" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt=""></a>
+            <a href="https://www.instagram.com/outlookindia/" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt=""></a>
+            <a href="https://www.youtube.com/user/OutlookMagazine" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt=""></a>
+        </div>
+    </div>
+
+    <nav>
+        <div>
+            <div id="navbar">
+                <div><a href="http://127.0.0.1:5500/index.html">HOME</a></div>
+                <div><a href="">OUTLOOK</a></div>
+                <div><a href="">BUSINESS</a></div>
+                <div><a href="">MONEY</a></div>
+                <div><a href="">CRYPTO</a></div>
+                <div><a href="">TRAVEL</a></div>
+                <div><a href="">SPORT</a></div>
+                <div><a href="">VIDEOS</a></div>
+                <div><a href="">ENTERTAINMENT</a></div>
+                <div><a href="">PHOTOS</a></div>
+                <div><a href="">MAGAZINE</a></div>
+                <div><a href="">HINDI</a></div>
+                <div><a href="">OTHERS</a></div>
+                <div><a href="">AGRITECH</a></div>
+                <div><a href="">CORNER</a></div>
+                <img src="https://www.outlookindia.com/images/home_new_v4/search_in_nav.svg" alt="">
+            </div>
+
+        </div>
+    </nav>
+
+    <div id="outlook">
+        <div>Magazine</div>
+        <div>Weekender</div>
+        <div>India News</div>
+        <div>International News</div>
+        <div>Culture</div>
+        <div>Study Abroad</div>
+    </div>
+
+    <h1>International</h1>
+    <div id="newstop">
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1658473776.webp" alt="">
+            <h4>In Cash-Strapped Sri Lanka, Two More Persons Die While Waiting In Queue For Fuel</h4>
+            <p>Two men died in cash-strapped Sri Lanka on Friday while waiting in serpentine queues to purchase fuel as widespread shortages and soaring inflation levels continue to heap misery on citizens. <br><span>22 July 2022</span></p>
+            <div></div>
+
+            <h4>Japan Approves Release Of Radioactive Wastewater From Fukushima Nuclear Plant Into Sea</h4>
+            <p>Local fishing communities and neighbouring countries have raised concerns about potential health hazards from the radioactive wastewater, which the officials say will be treated to levels far below releasable standards. <br><span>22 July 2022</span></p>
+            <div></div>
+
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1656749908.webp" alt="">
+            <h4>Russian Airstrike Kills 7 People Including Children In Syria: Rights Group</h4>
+            <p>The Syrian Observatory for Human Rights and opposition media outlet Orient TV say the airstrike in Idlib's town of Jisr al-Shoghour was carried out by a Russian warplane.</span></p>
+            <div></div>
+        </div>
+
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1658466775.webp" alt="">
+            <h4>Sri Lanka's New Prime Minister Dinesh Gunawardena Is A Leftist Leader, Veteran Politician</h4>
+            <p>New Sri Lankan Prime Minister Dinesh Gunawardena has earlier served as foreign minister, education minister, and home minister. <br><span>22 July 2022</span></p>
+            <div></div>
+
+            <h4>Liz Truss Holds Commanding Lead Over Rishi Sunak In UK PM Race:Survey</h4>
+            <p>On Thursday, Conservative Party members voted to send both Rishi Sunak and Liz Truss through to the final stage of the party’s leadership contest in the race to replace Boris Johnson.</span></p>
+            <div></div>
+
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1658466775.webp" alt="">
+            <h4>Sri Lanka: Veteran Politician Dinesh Gunawardena Appointed As The New Prime Minister </h4>
+            <p>A stalwart of Sri Lankan politics, Dinesh Gunawardena, 73. earlier served as the foreign minister and education minister. He was appointed as Home Minister in April by then President Gotabaya Rajapaksa. <br><span>22 July 2022</span></p>
+            <div></div>
+        </div>
+
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1657251266.webp"
+                alt="">
+            <h4>https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1657251266.webp
+            </h4>
+            <p>Two Indian brothers and their Indian-American friend have been charged in the US in the first-ever cryptocurrency insider trading scheme in which they made illicit profits totalling over a million dollars.<br><span>22 July 2022</span></p>
+            <div></div>
+
+            <h4>
+                Top UN Official In Sri Lanka Calls For Inclusive Consultations To Resolve Economic Crisis</h4>
+            <p>Top UN Official In Sri Lanka Calls For Inclusive Consultations To Resolve Economic Crisis</span></p>
+            <div></div>
+
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1658461440.webp" alt="">
+            <h4>Sri Lanka's New President Wickremesinghe To Swear In Cabinet Today</h4>
+            <p>Ranil Wickremesinghe, who was on Thursday sworn in as the country's eighth president after he won a parliamentary ballot, has called for bipartisanship to address the unprecedented economic crisis the country is facing. <br><span>22 July 2022</span></p>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="advertise">
+        <p>ADVERTISEMENT</p>
+        <img src="https://tpc.googlesyndication.com/simgad/14648005780446685002" alt="">
+    </div>
+
+    <div id="shortnews">
+        <div>
+            <div>
+                <p>22 July 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1658459554.webp" alt="">
+                <div>
+                    <h3>Ukraine Grain Export Deal To Be Signed In Istanbul: Turkey</h3>
+                    <p>Turkish President Recep Tayyip Erdogan's office said that he, U.N. Secretary General Antonio Guterres and officials from Russia and Ukraine will oversee the...</p>
+                </div>
+            </div>
+            <div>
+                <p>22 July 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1658457737.webp" alt="">
+                <div>
+                    <h3>YouTube To Remove Videos Spreading Abortion Falsehoods</h3>
+                    <p>The move announced Thursday by the Google-owned video site comes about a month after the U.S. Supreme Court overturned Roe v. Wade, the case that had protected...</p>
+                </div>
+            </div>
+            <div>
+                <p>22 July 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1653302291.webp"
+                    alt="">
+                <div>
+                    <h3>Iran To Resume Attacks On US: Top American Air Force General</h3>
+                    <p>The top US Air Force general Lt. Gen. Alexus Grynkewich also expressed fears over Russian and Chinese influence taking hold as superpowers vie for economic and...</p>
+                </div>
+            </div>
+            <div>
+                <p>22 July 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1646040177.jpeg" alt="">
+                <div>
+                    <h3>Vatican Warns Against German Catholic Reform Proposals</h3>
+                    <p>DThe ‘Synodal Path’ has sparked fierce resistance inside Germany and beyond, primarily from conservatives opposed to opening any debate on issues such as...</p>
+                </div>
+            </div>
+            <div>
+                <p>22 July 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1655007523.webp" alt="">
+                <div>
+                    <h3>India Extends Its Support To Crisis-Hit Sri Lanka</h3>
+                    <p>India’s reiterated its support to Sri Lanka, a day after Sri Lankan Parliament elected Ranil Wickremesinghe as the country's President.
+
+                    </p>
+                </div>
+            </div>
+            <div>
+                <p>22 July 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1658320060.webp" alt="">
+                <div>
+                    <h3>European Wildfire Threat Recedes Following A Temperature Drop</h3>
+                    <p>Following a heinous period of heatwave and wildfires, Europe witnessed a drop in temperatures on Thursday.</p>
+                </div>
+            </div>
+            <div>
+                <p>22 July 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1658397231.webp" alt="">
+                <div>
+                    <h3>Iran Recalls Ambassador To Sweden Over Court Decision</h3>
+                    <p>Iran's state TV said Thursday the country's foreign ministry recalled its ambassador from Sweden after an Iranian citizen was sentenced to life by a Swedish...</p>
+                </div>
+            </div>
+            <div>
+                <p>22 July 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1646800048.webp" alt="">
+                <div>
+                    <h3>EU Imposes More Sanctions On Moscow Over Ukraine Invasion</h3>
+                    <p>The European Union imposed more sanctions on Russia on Thursday over the war in Ukraine after the bloc's member states backed a series of measures that would...</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="photo">
+            <div></div>
+            <div>
+                <h3>PHOTO GALLERY</h3>
+                <button>Previous</button>
+                <button>Next</button>
+                <img>
+                <p></p>
+            </div>
+            <h3 id="videos">VIDEOS</h3>
+            <hr>
+            <div>
+                <a href="https://www.outlookindia.com/national/sainik-pandharinath-sawant-on-what-went-wrong-for-shiv-sena-videos-209938"><img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1658126750.webp" alt=""></a>
+                <p>Sainik Pandharinath Sawant on what went wrong for Shiv Sena</p>
+            </div>
+            <hr>
+            <div>
+                <a href="https://www.outlookindia.com/national/deadpen-messiah-videos-209835"><img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1658064005.webp" alt=""></a>
+                <p>Deadpen Messiah</p>
+            </div>
+            <hr>
+            <div>
+                <a href="https://www.outlookindia.com/national/gangsta-rap-videos-209572"><img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1657945044.webp" alt=""></a>
+                <p>Gangsta Rap</p>
+            </div>
+            <hr>
+            <div>
+                <a href="https://www.outlookindia.com/national/-it-was-never-about-power-for-uddhavji-says-priyanka-chaturvedi-videos-208101"><img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1657388601.webp" alt=""></a>
+                <p>'It was never about power for Uddhavji' says Priyanka Chaturvedi</p>
+            </div>
+            <hr>
+            <div>
+                <a href="https://www.outlookindia.com/magazine/monsoons-melodies-and-maladies-videos-208095"><img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1657385958.webp" alt=""></a>
+                <p>Monsoons: Melodies and Maladies</p>
+            </div>
+            <hr>
+                <p style="text-align: center; padding: 15px">ADVERTISEMENT</p>
+                <video src="https://canvid.akamaized.net/Prod/data/home/ctn/72980/videos/0/69c66e59f5b778438af78331027b1d21.mp4" autoplay controls muted></video>
+        </div>
+
+        
+
+</body>
+
+</html>
+
+
+
+
+<script>
+    let photoarray = [
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658473075.webp",
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658470199.webp",
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658469743.webp",
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658471063.webp",
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658487609.webp",
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658485578.webp",
+
+    ]
+
+
+
+    let signindata = JSON.parse(localStorage.getItem("SigninData")) || []
+    if (signindata.length < 1) {
+        alert("Log In First")
+        window.location.href = "http://127.0.0.1:5500/index.html"
+    }
+    if (signindata.length > 0) {
+        let name = document.createElement("div");
+        name.innerText = signindata[0]["Name"];
+        let blank1 = document.createElement("div");
+        let blank2 = document.createElement("div");
+        let logout = document.createElement("div");
+        logout.innerText = "Log Out"
+        document.querySelector("#info").append(blank1, name, blank2, logout)
+    }
+
+    document.querySelector("#info>div:nth-child(4)").addEventListener("click", logout)
+
+    function logout() {
+        signindata.pop();
+        localStorage.setItem("SigninData", JSON.stringify(signindata))
+        window.location.href = "http://127.0.0.1:5500/index.html"
+    }
+
+    document.querySelector("#navbar>div:nth-child(2)").addEventListener("mouseenter", outlook)
+
+    function outlook() {
+        document.querySelector("#outlook").style.display = "flex";
+    }
+
+    document.querySelector("#outlook>div").addEventListener("click", mag)
+
+    function mag() {
+        window.location.href = "http://127.0.0.1:5500/magazine.html"
+    }
+
+    document.querySelector("#outlook>div:nth-child(2)").addEventListener("click", weekender)
+
+    function weekender() {
+        window.location.href = "http://127.0.0.1:5500/weekender.html#sixth"
+    }
+
+    document.querySelector("#outlook>div:nth-child(3)").addEventListener("click", indianews)
+
+    function indianews() {
+        window.location.href = "http://127.0.0.1:5500/indianews.html"
+    }
+
+    document.querySelector("#outlook>div:nth-child(4)").addEventListener("click", internationalnews)
+
+    function internationalnews() {
+        window.location.href = "http://127.0.0.1:5500/internationalnews.html"
+    }
+    let i=0
+
+    let photo=document.querySelector("#photo img");
+    photo.src=photoarray[0]
+
+    document.querySelector("h3+button").addEventListener("click", function(){
+        previous(i)
+    })
+    document.querySelector("button+button").addEventListener("click", function(){
+        next(i)
+    })
+
+    function previous() {
+        
+        if(i>0){
+            i--;
+            photo.src=photoarray[i];
+        }
+        else{
+            photo.src=photoarray[i]
+        }
+    }
+    
+    function next(){
+        if(i<photoarray.length-1){
+            i++;
+            photo.src=photoarray[i];
+        }
+        else{
+            photo.src=photoarray[i]
+        }
+    }
+
+</script>
