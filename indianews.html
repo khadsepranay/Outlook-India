@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/topsection.css">
+    <link rel="stylesheet" href="hoverOnNavbar.css">
+
+    <style>
+        h1 {
+            width: 90%;
+            margin: auto;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            font-size: larger;
+            margin: 15px auto;
+        }
+
+        #newstop {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px
+        }
+
+        #newstop img {
+            width: 100%;
+        }
+
+        span {
+            color: rgb(192, 18, 18);
+        }
+
+        #newstop>div div {
+            border-bottom: 1px solid rgb(182, 175, 175);
+            margin: 15px auto;
+        }
+
+        p {
+            color: rgb(102, 101, 101);
+        }
+
+        #advertise {
+            height: 300px;
+            background-color: rgb(239, 234, 234);
+            text-align: center;
+            border: 1px solid rgb(212, 209, 209);
+        }
+
+        #shortnews {
+            width: 90%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 35px
+        }
+        #shortnews>div:nth-child(1){
+            margin-top: 19px;
+        }
+        #shortnews>div:nth-child(1){
+            margin-top: px;
+        }
+
+        #shortnews>div:nth-child(1)>div {
+            display: grid;
+            grid-template-columns: 1fr 2fr 3fr;
+            gap: 30px;
+        }
+
+        #shortnews>div>div img {
+            width: 100%;
+        }
+
+        #shortnews>div>div {
+            padding: 20px;
+            border-bottom: 1px solid rgb(186, 184, 184);
+        }
+
+        button {
+            width: 120px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        h3+button{
+            background-color: rgb(141, 13, 13);
+            border-radius: 15px;
+            color:white;
+            font-size: 15px;
+            border: none;
+        }
+        button+button{
+            background-color: rgb(7, 110, 33);
+            border-radius: 15px;
+            color:white;
+            font-size: 15px;
+            border: none;
+
+        }
+        #photo h3{
+            color:rgb(7, 69, 131);
+            font-weight: bolder;
+            font-size: 35px;
+            text-align: center;
+        }
+        h3{
+            margin-top: 30px;
+        }
+        #videos~div{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            align-items: center;
+        }
+        video{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topimg">
+        <img src="https://tpc.googlesyndication.com/simgad/5503378334793473371" alt="">
+    </div>
+    <div id="logo">
+        <div>Wednesday, 20 July 2022</div>
+        <div>
+            <img src="https://www.outlookindia.com/images/home_new_v4/logo_outlook.svg" alt="">
+            <div id="info"></div>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/Outlookindia" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt=""></a>
+            <a href="https://twitter.com/outlookindia/" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt=""></a>
+            <a href="https://www.instagram.com/outlookindia/" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt=""></a>
+            <a href="https://www.youtube.com/user/OutlookMagazine" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt=""></a>
+        </div>
+    </div>
+
+    <nav>
+        <div>
+            <div id="navbar">
+                <div><a href="http://127.0.0.1:5500/index.html">HOME</a></div>
+                <div><a href="">OUTLOOK</a></div>
+                <div><a href="">BUSINESS</a></div>
+                <div><a href="">MONEY</a></div>
+                <div><a href="">CRYPTO</a></div>
+                <div><a href="">TRAVEL</a></div>
+                <div><a href="">SPORT</a></div>
+                <div><a href="">VIDEOS</a></div>
+                <div><a href="">ENTERTAINMENT</a></div>
+                <div><a href="">PHOTOS</a></div>
+                <div><a href="">MAGAZINE</a></div>
+                <div><a href="">HINDI</a></div>
+                <div><a href="">OTHERS</a></div>
+                <div><a href="">AGRITECH</a></div>
+                <div><a href="">CORNER</a></div>
+                <img src="https://www.outlookindia.com/images/home_new_v4/search_in_nav.svg" alt="">
+            </div>
+
+        </div>
+    </nav>
+
+    <div id="outlook">
+        <div>Magazine</div>
+        <div>Weekender</div>
+        <div>India News</div>
+        <div>International News</div>
+        <div>Culture</div>
+        <div>Study Abroad</div>
+    </div>
+
+    <h1>National</h1>
+    <div id="newstop">
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1658377075.webp" alt="">
+            <h4>Third Case Of Monkeypox Reported From Kerala</h4>
+            <p>Kerala has reported a third case of monkeypox disease. <br><span>22 July 2022</span></p>
+            <div></div>
+
+            <h4>Opposition Continues Its Protest Over Price Rise In Parliament, Seeks Discussion In House</h4>
+            <p>Parliament Monsoon Session: Leaders of various parties, including the Congress, NCP, CPI, CPI-M, Shiv
+                Sena, DMK, RSP and some others, gathered outside Mahatma Gandhi's statue and raised slogans against the
+                government. <br><span>22 July 2022</span></p>
+            <div></div>
+
+            <img src="https://imgnew.outlookindia.com/public/uploads/articles/2019/9/5/INDIGO_630_630.jpg" alt="">
+            <h4>DGCA Claims Airlines Cannot Deny Boarding To Differently-abled Passengers Without Doctor's Opinion</h4>
+            <p>In its latest statement, the DGCA has said that in order to ensure the safety of any disabled passenger,
+                they will be allowed to board the flight only after clearance by a doctor in person. <br><span>22 July
+                    2022</span></p>
+            <div></div>
+        </div>
+
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1658386808.webp" alt="">
+            <h4>CBSE Class 10 Result Declared, 94% Students Pass Exams</h4>
+            <p>Both CBSE class 10th result and CBSE class 12th result can be checked on CBSE results website
+                (https://cbseresults.nic.in/). <br><span>22 July 2022</span></p>
+            <div></div>
+
+            <h4>Santhals: A Look At The Tribal Community Of India's New President Droupadi Murmu</h4>
+            <p>The third largest schedule tribe community in the country after Gond and Bhil, the Santhal community’s
+                history and heritage are under the spotlight at the national and international levels. <br><span>22 July
+                    2022</span></p>
+            <div></div>
+
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1658478250.webp" alt="">
+            <h4>Prez Poll: EC Issues Certificate Of Election To Droupadi Murmu </h4>
+            <p>The certificate will now be sent to the Union Home Secretary, who will read it out at the oath-taking
+                ceremony of the 15th President of India which is likely to take place at the historic Central Hall of
+                Parliament House on July 25. <br><span>22 July 2022</span></p>
+            <div></div>
+        </div>
+
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/zomato-swiggy_1641757097.jpg"
+                alt="">
+            <h4>Facing Unfair Competition From Global Tech Giants: Domestic Tech Players To Parliament Panel
+            </h4>
+            <p>During the meeting with top executives of eight technology firms, including Zomato, Swiggy, Flipkart, and
+                MakeMyTrip, were also questioned about what steps they were taking to address the concerns of vendors on
+                their platforms, sources said <br><span>22 July 2022</span></p>
+            <div></div>
+
+            <h4>
+                Crypto Logical Extension Of Fintech, Its Use As Asset, Currency A Challenge: MoS IT</h4>
+            <p>Speaking on sidelines of Fintech Festival, Chandrasekhar said the whole world is grappling with the issue
+                of crypto and has to come to an understanding on the ways and means to address it <br><span>22 July
+                    2022</span></p>
+            <div></div>
+
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1653051904.webp" alt="">
+            <h4>Two Indian Brothers, Their Indian-American Friend Charged In First-ever Cryptocurrency Insider Trading
+                Case</h4>
+            <p>Ishan Wahi, 32, and his brother Nikhil Wahi, 26, are citizens of India and were residing in Seattle while
+                Sameer Ramani, 33, resides in Houston <br><span>22 July 2022</span></p>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="advertise">
+        <p>ADVERTISEMENT</p>
+        <img src="https://tpc.googlesyndication.com/simgad/2149295562792320042" alt="">
+    </div>
+
+    <div id="shortnews">
+        <div>
+            <div>
+                <p>22 July 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1646891593.webp" alt="">
+                <div>
+                    <h3>Rupee Falls 7 Paise To 79.92 Against Us Dollar In Early Trade</h3>
+                    <p>At the interbank foreign exchange, the rupee opened at 79.90 against the US dollar, then fell to
+                        79.92 against the greenback, registering a decline of 7 paise...</p>
+                </div>
+            </div>
+            <div>
+                <p>22 July 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1658475587.webp" alt="">
+                <div>
+                    <h3>Rohini Nilekani's New Book Talks Of 'Samaaj, Sarkaar, Bazaar'</h3>
+                    <p>Rohini Nilekani advocates that the quest for a good society begins with positioning 'samaaj' as
+                        the foundational sector in order to keep the state and markets...</p>
+                </div>
+            </div>
+            <div>
+                <p>22 July 2022</p>
+                <img src="https://imgnew.outlookindia.com/public/uploads/articles/2021/12/14/Untitled_design_(8).jpg"
+                    alt="">
+                <div>
+                    <h3>upGrad Acquires Harappa Education For Rs 300 Crore</h3>
+                    <p>upGrad closed the transaction with present Harappa shareholders - Bodhi Tree Systems (a
+                        newly-formed platform between James Murdoch and Uday Shankar) and...</p>
+                </div>
+            </div>
+            <div>
+                <p>22 July 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1651668613.webp" alt="">
+                <div>
+                    <h3>Rupee Holding Up Well Relative To Emerging Market Peers, Advanced Economies: RBI Governor</h3>
+                    <p>Days after the domestic currency breached the 80-level against the dollar, Das said Reserve Bank
+                        of India (RBI) has zero tolerance for volatile and bumpy...</p>
+                </div>
+            </div>
+            <div>
+                <p>22 July 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1658473075.webp" alt="">
+                <div>
+                    <h3>Day In Pics: July 22, 2022</h3>
+                    <p>Find today's news in pics from India and around the world for July 22, 2022</p>
+                </div>
+            </div>
+            <div>
+                <p>22 July 2022</p>
+                <img src="https://imgnew.outlookindia.com/public/uploads/articles/2021/11/24/illuzx.jpg" alt="">
+                <div>
+                    <h3>28,663 Indian Applicants Waiting To Adopt A Child In The Country: Government</h3>
+                    <p>Find today's news in pics from India and around the world for July 22, 2022</p>
+                </div>
+            </div>
+            <div>
+                <p>22 July 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1655796016.webp" alt="">
+                <div>
+                    <h3>Shops To Display Names In Marathi: Supreme Court Notice To Maharashtra Government On Plea Against State Government’s Rule </h3>
+                    <p>The high court had dismissed a petition filed by the Federation of Retail Traders and imposed a cost of Rs 25,000 on it. The high court had noted that there...</p>
+                </div>
+            </div>
+            <div>
+                <p>22 July 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1654942025.webp" alt="">
+                <div>
+                    <h3>10-20% Covid Affected People Experience Long-Term Effects After Recovery: MoS Health</h3>
+                    <p>The symptoms of long Covid may include fatigue, shortness of breath or difficulty breathing, memory, concentration or sleep problems, persistent cough, chest...</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="photo">
+            <div></div>
+            <div>
+                <h3>PHOTO GALLERY</h3>
+                <button>Previous</button>
+                <button>Next</button>
+                <img>
+                <p></p>
+            </div>
+            <h3 id="videos">VIDEOS</h3>
+            <hr>
+            <div>
+                <a href="https://www.outlookindia.com/national/sainik-pandharinath-sawant-on-what-went-wrong-for-shiv-sena-videos-209938"><img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1658126750.webp" alt=""></a>
+                <p>Sainik Pandharinath Sawant on what went wrong for Shiv Sena</p>
+            </div>
+            <hr>
+            <div>
+                <a href="https://www.outlookindia.com/national/deadpen-messiah-videos-209835"><img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1658064005.webp" alt=""></a>
+                <p>Deadpen Messiah</p>
+            </div>
+            <hr>
+            <div>
+                <a href="https://www.outlookindia.com/national/gangsta-rap-videos-209572"><img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1657945044.webp" alt=""></a>
+                <p>Gangsta Rap</p>
+            </div>
+            <hr>
+            <div>
+                <a href="https://www.outlookindia.com/national/-it-was-never-about-power-for-uddhavji-says-priyanka-chaturvedi-videos-208101"><img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1657388601.webp" alt=""></a>
+                <p>'It was never about power for Uddhavji' says Priyanka Chaturvedi</p>
+            </div>
+            <hr>
+            <div>
+                <a href="https://www.outlookindia.com/magazine/monsoons-melodies-and-maladies-videos-208095"><img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1657385958.webp" alt=""></a>
+                <p>Monsoons: Melodies and Maladies</p>
+            </div>
+            <hr>
+                <p style="text-align: center; padding: 15px">ADVERTISEMENT</p>
+                <video src="https://canvid.akamaized.net/Prod/data/home/ctn/72980/videos/0/69c66e59f5b778438af78331027b1d21.mp4" autoplay controls muted></video>
+        </div>
+
+        
+
+</body>
+
+</html>
+
+
+
+
+<script>
+    let photoarray = [
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658473075.webp",
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658470199.webp",
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658469743.webp",
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658471063.webp",
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658487609.webp",
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658485578.webp",
+
+    ]
+
+
+
+    let signindata = JSON.parse(localStorage.getItem("SigninData")) || []
+    if (signindata.length < 1) {
+        alert("Log In First")
+        window.location.href = "http://127.0.0.1:5500/index.html"
+    }
+    if (signindata.length > 0) {
+        let name = document.createElement("div");
+        name.innerText = signindata[0]["Name"];
+        let blank1 = document.createElement("div");
+        let blank2 = document.createElement("div");
+        let logout = document.createElement("div");
+        logout.innerText = "Log Out"
+        document.querySelector("#info").append(blank1, name, blank2, logout)
+    }
+
+    document.querySelector("#info>div:nth-child(4)").addEventListener("click", logout)
+
+    function logout() {
+        signindata.pop();
+        localStorage.setItem("SigninData", JSON.stringify(signindata))
+        window.location.href = "http://127.0.0.1:5500/index.html"
+    }
+
+    document.querySelector("#navbar>div:nth-child(2)").addEventListener("mouseenter", outlook)
+
+    function outlook() {
+        document.querySelector("#outlook").style.display = "flex";
+    }
+
+    document.querySelector("#outlook>div").addEventListener("click", mag)
+
+    function mag() {
+        window.location.href = "http://127.0.0.1:5500/magazine.html"
+    }
+
+    document.querySelector("#outlook>div:nth-child(2)").addEventListener("click", weekender)
+
+    function weekender() {
+        window.location.href = "http://127.0.0.1:5500/weekender.html#sixth"
+    }
+
+    document.querySelector("#outlook>div:nth-child(3)").addEventListener("click", indianews)
+
+    function indianews() {
+        window.location.href = "http://127.0.0.1:5500/indianews.html"
+    }
+
+    document.querySelector("#outlook>div:nth-child(4)").addEventListener("click", internationalnews)
+
+    function internationalnews() {
+        window.location.href = "http://127.0.0.1:5500/internationalnews.html"
+    }
+    let i=0
+
+    let photo=document.querySelector("#photo img");
+    photo.src=photoarray[0]
+
+    document.querySelector("h3+button").addEventListener("click", function(){
+        previous(i)
+    })
+    document.querySelector("button+button").addEventListener("click", function(){
+        next(i)
+    })
+
+    function previous() {
+        
+        if(i>0){
+            i--;
+            photo.src=photoarray[i];
+        }
+        else{
+            photo.src=photoarray[i]
+        }
+    }
+    
+    function next(){
+        if(i<photoarray.length-1){
+            i++;
+            photo.src=photoarray[i];
+        }
+        else{
+            photo.src=photoarray[i]
+        }
+    }
+
+</script>
