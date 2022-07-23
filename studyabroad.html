@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Abroad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/topsection.css">
+    <link rel="stylesheet" href="hoverOnNavbar.css">
+
+    <style>
+        #topnews{
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap:15px;
+            width: 90%;
+            margin: auto;
+            background-color: rgba(233, 228, 228, 0.599);
+            padding: 15px;
+        }
+        #topnews>div:nth-child(1){
+            border-right: 1px solid rgb(85, 85, 85);
+            padding-right: 15px;
+        }
+        #topnews>div>h1{
+            margin-bottom: 15px;
+        }
+        #topnews img{
+            width: 100%;
+        }
+        span{
+            color:rgb(201, 17, 17)
+        }
+        p{
+            color:rgb(87, 85, 85)
+        }
+        #topnews>div:nth-child(2) div, #topnews>div:nth-child(3) div{
+            border-bottom: 1px solid rgb(181, 179, 179);
+            margin: 20px auto;
+        }
+
+        
+
+        p {
+            color: rgb(102, 101, 101);
+        }
+
+        #advertise {
+            height: 300px;
+            background-color: rgba(239, 234, 234, 0.225);
+            text-align: center;
+            border: 1px solid rgb(212, 209, 209);
+            margin: 50px auto;
+        }
+
+        #shortnews {
+            width: 90%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 35px
+        }
+
+        #shortnews>div:nth-child(1) {
+            margin-top: 19px;
+        }
+
+        #shortnews>div:nth-child(1) {
+            margin-top: px;
+        }
+
+        #shortnews>div:nth-child(1)>div {
+            display: grid;
+            grid-template-columns: 1fr 2fr 3fr;
+            gap: 30px;
+        }
+
+        #shortnews>div>div img {
+            width: 100%;
+        }
+
+        #shortnews>div>div {
+            padding: 20px;
+            border-bottom: 1px solid rgb(186, 184, 184);
+        }
+
+
+        #ad>div:nth-child(1){
+            border: 1px solid rgb(235, 231, 231);
+            background-color: rgba(227, 225, 225, 0.422);
+        }
+        #ad>div>p{
+            text-align: center;
+            padding: 10px;
+        }
+        #ad>div~p{
+            font-size: 20px;
+            color:black;
+            font-weight: 600;
+            border-bottom: 2px solid rgb(193, 6, 6);
+            margin-top: 50px;
+        }
+
+        .aside>div{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            margin: 20px auto;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="topimg">
+        <img src="https://tpc.googlesyndication.com/simgad/5503378334793473371" alt="">
+    </div>
+    <div id="logo">
+        <div>Wednesday, 20 July 2022</div>
+        <div>
+            <img src="https://www.outlookindia.com/images/home_new_v4/logo_outlook.svg" alt="">
+            <div id="info"></div>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/Outlookindia" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt=""></a>
+            <a href="https://twitter.com/outlookindia/" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt=""></a>
+            <a href="https://www.instagram.com/outlookindia/" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt=""></a>
+            <a href="https://www.youtube.com/user/OutlookMagazine" target="_blank"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt=""></a>
+        </div>
+    </div>
+
+    <nav>
+        <div>
+            <div id="navbar">
+                <div><a href="http://127.0.0.1:5500/index.html">HOME</a></div>
+                <div><a href="">OUTLOOK</a></div>
+                <div><a href="">BUSINESS</a></div>
+                <div><a href="">MONEY</a></div>
+                <div><a href="">CRYPTO</a></div>
+                <div><a href="">TRAVEL</a></div>
+                <div><a href="">SPORT</a></div>
+                <div><a href="">VIDEOS</a></div>
+                <div><a href="">ENTERTAINMENT</a></div>
+                <div><a href="">PHOTOS</a></div>
+                <div><a href="">MAGAZINE</a></div>
+                <div><a href="">HINDI</a></div>
+                <div><a href="">OTHERS</a></div>
+                <div><a href="">AGRITECH</a></div>
+                <div><a href="">CORNER</a></div>
+                <img src="https://www.outlookindia.com/images/home_new_v4/search_in_nav.svg" alt="">
+            </div>
+
+        </div>
+    </nav>
+
+    <div id="outlook">
+        <div>Magazine</div>
+        <div>Weekender</div>
+        <div>India News</div>
+        <div>International News</div>
+        <div>Culture</div>
+        <div>Study Abroad</div>
+    </div>
+
+
+
+    <div id="topnews">
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1658043996.webp" alt="">
+            <h1>Rupee At Record Low: American University Dream Seems Farther To Study Abroad Aspirants</h1>
+            <p>While financial institutions feel the concerns are genuine and the requirement for higher amounts of education loans will go up, study abroad consultants believe students have less to worry about, especially those who plan to work in the US, post completion... <br><span>17 July 2022</span></p>
+        </div>
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1657628444.webp" alt="">
+            <h2>Will UGC’s Plan Of Marrying Indian And Foreign Universities Fuel Students’ Study Abroad Dreams?</h2>
+            <p>While some have their hopes pinned to the collaborations with employment in focus, experts have their reservations <br><span>12 July 2022</span></p>
+            <div></div>
+            <h2>Studying Abroad In A Limited Budget</h2>
+            <p>Here are some tips from Mr. Abhijeet Virmani, Director at Top30Universities.com, India's leading premium admission consulting firm helping students get... <br><span>12 July 2022</span></p>
+            <div></div>
+        </div>
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1655372693.webp" alt="">
+            <h2>Gurinder Singh Bhatti, Saving Youngsters From Fraudsters Luring Them With Marriages For Settling Overseas</h2>
+            <p>Gurinder Singh Bhatti, saving youngsters from fraudsters luring them with marriages for settling overseas. Bhatti has gone out of his way to ensure to get the...  <br><span>16 June 2022</span></p>
+            <div></div>
+            <h2>How Education Agents Mislead Medical Students And Thwart NMC’s Efforts To Stop Them From Going Abroad</h2>
+            <p>Many Russian colleges, that admit students through entrance tests, have started receiving applications from Indian students and they will start offering... <br><span>16 June 2022</span></p>
+            <div></div>
+        </div>
+    </div>
+
+    
+
+    <div id="advertise">
+        <p>ADVERTISEMENT</p>
+        <img src="https://tpc.googlesyndication.com/simgad/2149295562792320042" alt="">
+    </div>
+
+    <div id="shortnews">
+        <div>
+            <div>
+                <p>08 June 2022 </p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1654688491.webp" alt="">
+                <div>
+                    <h3>Overseas Education Consultant Yashi Shukla Is Making Financial Aid More Accessible</h3>
+                    <p>Over the past 16 years, Yashi has been behind the admission success stories of many students. She contributed to their admissions to universities in the USA,...</p>
+                </div>
+            </div>
+            <div>
+                <p>07 June 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1654588467.webp" alt="">
+                <div>
+                    <h3>Rohini Nilekani's New Book Talks Of 'Samaaj, Sarkaar, Bazaar'</h3>
+                    <p>Rohini Nilekani advocates that the quest for a good society begins with positioning 'samaaj' as
+                        the foundational sector in order to keep the state and markets...</p>
+                </div>
+            </div>
+            <div>
+                <p>01 June 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1648904688.webp"
+                    alt="">
+                <div>
+                    <h3>Supreme Court Ruling Casts Shadow Over Indian MBBS Students’ Study Abroad Ambitions</h3>
+                    <p>By upholding National Medical Commission regulations, the Supreme Court has greenlit norms that make it impossible for Indian students to practice in India...</p>
+                </div>
+            </div>
+            <div>
+                <p>24 May 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1647780997.webp" alt="">
+                <div>
+                    <h3>SBI Launches 15-Year Student Term Loans; Know All The Details Here</h3>
+                    <p>The SBI loan does not need a collateral for amounts up to Rs 7.5 lakh and offers a 0.5 per cent concession in the interest rate to girl students. Read on to...</p>
+                </div>
+            </div>
+            <div>
+                <p>12 May 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1652279089.webp" alt="">
+                <div>
+                    <h3>How A Depreciating Rupee Impacts Finances In Terms Of Investing And Studying Abroad</h3>
+                    <p>As the rupee falls against the dollar, there are definite impact to be seen on investments and overseas education. Here’s how to go about both</p>
+                </div>
+            </div>
+            <div>
+                <p>10 May 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1652203868.webp" alt="">
+                <div>
+                    <h3>Indian Students Love China For Higher Studies Despite Border Dispute</h3>
+                    <p>The universities offer scholarships for students pursuing higher studies in medicine, engineering, business studies, etc. Also, the cost of living in some...</p>
+                </div>
+            </div>
+            <div>
+                <p>04 May 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1651656515.webp" alt="">
+                <div>
+                    <h3>Study Abroad: Six Ways Indian Medical Students Get Duped And How To Avoid Them</h3>
+                    <p>Indian students pursuing their medical dream abroad are often duped in several ways. We caution you against some of them</p>
+                </div>
+            </div>
+            <div>
+                <p>29 April 2022</p>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1651228786.webp" alt="">
+                <div>
+                    <h3>AAccording to the academic consultants in the valley, having returned from war-torn Ukraine, Kashmiri medical students are showing interest in continuing their...</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="ad">
+            <div>
+                <p>ADVERTISEMENT</p>
+                <img src="https://s0.2mdn.net/simgad/9951604347234210060" alt="">
+            </div>
+            <p>MOST POPULAR</p>
+            <div class="aside">
+                <div>
+                        <img src="https://imgnew.outlookindia.com/public/uploads/articles/2020/9/12/jnhks-1556186572.jpg" alt="">
+                        <h4>Wanted Active Politics But Destiny Had Other Plans, Says...</h4>
+                </div>
+                <div>
+                    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1658394401.webp" alt="">
+                    <h4>Todt Gives Rare Schumacher Health Update</h4>
+                </div>
+                <div>
+                    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1653302291.webp" alt="">
+                    <h4>Iran To Resume Attacks On US: Top American Air Force General</h4>
+                </div>
+                <div>
+                    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1658490610.webp" alt="">
+                    <h4>ENG Vs SA, 2nd ODI, Live Cricket Score: Toss Delayed Due To...</h4>
+                </div>
+                <div>
+                    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1658486060.webp" alt="">
+                    <h4>The Fall Of A Tall Tower – Prashant Jain Resigns As Fund...</h4>
+                </div>
+                <div>
+                    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1658213293.webp" alt="">
+                    <h4>Will Continue Struggle Till Agnipath Scheme Is Withdrawn:...</h4>
+                </div>
+                <div>
+                    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1655568426.webp" alt="">
+                    <h4>MP Reports 219 Covid-19 Cases, One Death; Active Tally...</h4>
+                </div>
+
+            </div>
+
+                
+            <p>CULTURE & SOCIETY</p>
+            <div class="aside">
+                <div>
+                        <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1658552359.webp" alt="">
+                        <h4>A Manual: How To Wear A Saree?</h4>
+                </div>
+                <div>
+                    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1658549402.webp" alt="">
+                    <h4>Mumbai Versified, Two Poems</h4>
+                </div>
+                <div>
+                    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1658547964.webp" alt="">
+                    <h4>Poem: Water Ghazal</h4>
+                </div>
+                <div>
+                    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1658546517.webp" alt="">
+                    <h4>Book Excerpt: Chambal Revisited</h4>
+                </div>
+                </div>
+        </div>
+</body>
+
+</html>
+
+<script>
+    let signindata = JSON.parse(localStorage.getItem("SigninData")) || []
+    if (signindata.length < 1) {
+        alert("Log In First")
+        window.location.href = "http://127.0.0.1:5500/login.html"
+    }
+    if (signindata.length > 0) {
+        let name = document.createElement("div");
+        name.innerText = signindata[0]["Name"];
+        let blank1 = document.createElement("div");
+        let blank2 = document.createElement("div");
+        let logout = document.createElement("div");
+        logout.innerText = "Log Out"
+        document.querySelector("#info").append(blank1, name, blank2, logout)
+    }
+
+    document.querySelector("#navbar>div:nth-child(2)").addEventListener("mouseenter", outlook)
+
+    function outlook() {
+        document.querySelector("#outlook").style.display = "flex";
+    }
+
+
+    document.querySelector("#info>div:nth-child(4)").addEventListener("click", logout)
+
+    function logout() {
+        signindata.pop();
+        localStorage.setItem("SigninData", JSON.stringify(signindata))
+        window.location.href = "http://127.0.0.1:5500/index.html"
+    }
+
+
+    document.querySelector("#outlook>div").addEventListener("click", mag)
+
+    function mag() {
+        window.location.href = "http://127.0.0.1:5500/magazine.html"
+    }
+
+    document.querySelector("#outlook>div:nth-child(2)").addEventListener("click", weekender)
+
+    function weekender() {
+        window.location.href = "http://127.0.0.1:5500/weekender.html#sixth"
+    }
+
+    document.querySelector("#outlook>div:nth-child(3)").addEventListener("click", indianews)
+
+    function indianews() {
+        window.location.href = "http://127.0.0.1:5500/indianews.html"
+    }
+
+    document.querySelector("#outlook>div:nth-child(4)").addEventListener("click", internationalnews)
+
+    function internationalnews() {
+        window.location.href = "http://127.0.0.1:5500/internationalnews.html"
+    }
+
+    document.querySelector("#outlook>div:nth-child(5)").addEventListener("click", culture)
+
+    function culture() {
+        window.location.href = "http://127.0.0.1:5500/culture.html"
+    }
+
+    document.querySelector("#outlook>div:nth-child(6)").addEventListener("click", studyabroad)
+
+    function studyabroad() {
+        window.location.href = "http://127.0.0.1:5500/studyabroad.html"
+    }
+
+
+
+    
+
+    let photoarray = [
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658473075.webp",
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658470199.webp",
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658469743.webp",
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658471063.webp",
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658487609.webp",
+        "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1658485578.webp",
+
+    ]
+
+    let i = 0
+    let photo = document.querySelector("#photo img");
+    photo.src = photoarray[0]
+
+    document.querySelector("h3+button").addEventListener("click", function () {
+        previous(i)
+    })
+    document.querySelector("button+button").addEventListener("click", function () {
+        next(i)
+    })
+
+    function previous() {
+
+        if (i > 0) {
+            i--;
+            photo.src = photoarray[i];
+        }
+        else {
+            photo.src = photoarray[i]
+        }
+    }
+
+    function next() {
+        if (i < photoarray.length - 1) {
+            i++;
+            photo.src = photoarray[i];
+        }
+        else {
+            photo.src = photoarray[i]
+        }
+    }
+</script>
