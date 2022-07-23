@@ -150,6 +150,65 @@
         #related>div>img {
             width: 100%;
         }
+
+
+        @media all and (max-width:830px){
+            #topimg{
+                width: 800px;
+            }
+            #navbar{
+                width:600px;
+                font-size: smaller;
+                margin: 0%;
+            }
+            #navbar>div{
+                margin: 1px;
+            }
+            a{
+                padding: 2px;
+                font-size: smaller;
+            }
+            #navbar>img{
+                margin-left: 20px;
+            }
+            #middlesection,#middlesection2,#middlesection3,#related{
+                width: 790px;
+            }
+        }
+
+        @media all and (max-width:1000px) and (min-width:829px){
+            #navbar{
+                width:600px;
+                font-size: smaller;
+                justify-content: center;
+            }
+            #navbar>div{
+                margin: 2px;
+            }
+            a{
+                padding: 4px;
+                font-size: smaller;
+            }
+            #navbar>img{
+                margin-left: 20px;
+            }
+        }
+
+        @media all and (min-width:1000px) and (max-width:1400px){
+            #navbar{
+                justify-content: center;
+                margin-left: 30px;
+
+            }
+            
+            #navbar>div{
+                margin: 4px;
+            }
+            a{
+                padding: 4px;
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 
@@ -387,7 +446,7 @@
             <h2>MOST READ</h2>
             <div></div>
             <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1651720623.webp" alt="">
-            <h4>https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1651720623.webp</h4>
+            <h4>Demolition Politics: In Rajasthan’s Alwar, Even The Sacred Is Not Spared</h4>
             <div></div>
             <h4>I, Me, Myself: Indian Women Pushing Back Against Social Narratives To Be Single</h4>
             <div></div>
@@ -433,7 +492,7 @@
 
     let signindata = JSON.parse(localStorage.getItem("SigninData")) || []
     if (signindata.length < 1) {
-        alert("Log In First")
+        alert("Please Log In First")
         window.location.href = "http://127.0.0.1:5500/login.html"
     }
     if (signindata.length > 0) {
@@ -489,6 +548,15 @@
 
     function studyabroad() {
         window.location.href = "http://127.0.0.1:5500/studyabroad.html"
+    }
+
+
+    
+
+    document.querySelector("#logo>div:nth-child(2)>img").addEventListener("click",logohome)
+
+    function logohome(){
+        window.location.href="http://127.0.0.1:5500/index.html"
     }
 
 

@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <style>
         form {
-            width: 25%;
+            width: 390px;
             margin: 40px auto;
             text-align: center;
             box-shadow: 3px 3px 8px gray;
@@ -45,7 +45,7 @@
         }
 
         #signup {
-            width: 25%;
+            width: 380px;
             margin: 40px auto;
             text-align: center;
         }
@@ -57,6 +57,53 @@
         }
         input[type="submit"]{
             cursor: pointer;
+        }
+
+
+        @media all and (max-width:650px) and (min-width:499px){
+            form{
+                width:300px;
+                font-size: 9px;
+                margin: auto;
+            }
+        }
+
+
+        
+        @media all and (max-width:500px) and (min-width:200px){
+            #logo{
+                width: 420px;
+                margin: auto;
+            }
+
+            #logo div{
+                width: 70%;
+                justify-content: space-between;
+                align-items: center;
+            }
+            #logo img{
+                width: 80%;
+                margin-top: 10px;
+            }
+            #topimg{
+                width: 420px;
+                margin: auto;
+                text-align: center;
+            }
+            #topimg>img{
+                width: 420px;
+            }
+            #signin{
+                margin-left: 60px;
+            }
+            form{
+                width:300px;
+                font-size: 9px;
+                margin-left: 45px;
+            }
+            #signup{
+                margin-left: 35px;
+            }
         }
     </style>
 </head>
@@ -81,29 +128,6 @@
                     src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt=""></a>
         </div>
     </div>
-    <nav>
-        <div>
-            <div id="navbar">
-                <div><a href="http://127.0.0.1:5500/index.html">HOME</a></div>
-                <div><a href="">OUTLOOK</a></div>
-                <div><a href="">BUSINESS</a></div>
-                <div><a href="">MONEY</a></div>
-                <div><a href="">CRYPTO</a></div>
-                <div><a href="">TRAVEL</a></div>
-                <div><a href="">SPORT</a></div>
-                <div><a href="">VIDEOS</a></div>
-                <div><a href="">ENTERTAINMENT</a></div>
-                <div><a href="">PHOTOS</a></div>
-                <div><a href="">MAGAZINE</a></div>
-                <div><a href="">HINDI</a></div>
-                <div><a href="">OTHERS</a></div>
-                <div><a href="">AGRITECH</a></div>
-                <div><a href="">CORNER</a></div>
-                <img src="https://www.outlookindia.com/images/home_new_v4/search_in_nav.svg" alt="">
-            </div>
-
-        </div>
-    </nav>
 
     <form>
         <h1>SIGN IN TO OUTLOOK</h1>
@@ -157,6 +181,12 @@
     function signup(){
         window.location.href="http://127.0.0.1:5500/signup.html"
         
+    }
+
+    document.querySelector("#logo>div:nth-child(2)>img").addEventListener("click",logohome)
+
+    function logohome(){
+        window.location.href="http://127.0.0.1:5500/index.html"
     }
 
 

@@ -133,6 +133,65 @@
         video {
             width: 100%;
         }
+
+
+        @media all and (max-width:830px){
+            #topimg{
+                width: 700px;
+            }
+            #navbar{
+                width:600px;
+                font-size: smaller;
+                margin: 0%;
+            }
+            #navbar>div{
+                margin: 1px;
+            }
+            a{
+                padding: 2px;
+                font-size: smaller;
+            }
+            #navbar>img{
+                margin-left: 20px;
+            }
+            #newstop,#shortnews,#advertise img{
+                width: 790px;
+            }
+        }
+
+        @media all and (max-width:1000px) and (min-width:829px){
+            #navbar{
+                width:600px;
+                font-size: smaller;
+                justify-content: center;
+            }
+            #navbar>div{
+                margin: 2px;
+            }
+            a{
+                padding: 4px;
+                font-size: smaller;
+            }
+            #navbar>img{
+                margin-left: 20px;
+            }
+        }
+
+        @media all and (min-width:1000px) and (max-width:1400px){
+            #navbar{
+                justify-content: center;
+                margin-left: 30px;
+
+            }
+            
+            #navbar>div{
+                margin: 4px;
+            }
+            a{
+                padding: 4px;
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 
@@ -236,9 +295,8 @@
         </div>
 
         <div>
-            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1657251266.webp" alt="">
-            <h4>https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1657251266.webp
-            </h4>
+            <img src="https://imgnew.outlookindia.com/public/uploads/articles/2020/11/29/Iran_570_850.jpg" alt="">
+            <h4>Flash Floods Claim At Least 21 Lives In Southern Iran</h4>
             <p>Two Indian brothers and their Indian-American friend have been charged in the US in the first-ever
                 cryptocurrency insider trading scheme in which they made illicit profits totalling over a million
                 dollars.<br><span>22 July 2022</span></p>
@@ -471,6 +529,15 @@
 
     function studyabroad() {
         window.location.href = "http://127.0.0.1:5500/studyabroad.html"
+    }
+
+
+    
+
+    document.querySelector("#logo>div:nth-child(2)>img").addEventListener("click",logohome)
+
+    function logohome(){
+        window.location.href="http://127.0.0.1:5500/index.html"
     }
 
 

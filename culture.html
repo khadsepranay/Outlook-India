@@ -30,7 +30,7 @@
             margin: auto;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            justify-content: space-around;
+            justify-content: space-between;
             gap: 30px;
         }
 
@@ -133,6 +133,65 @@
 
         video {
             width: 100%;
+        }
+
+        @media all and (max-width:830px){
+            #topimg{
+                width: 700px;
+            }
+            #navbar{
+                width:600px;
+                font-size: smaller;
+                margin: 0%;
+            }
+            #navbar>div{
+                margin: 1px;
+            }
+            a{
+                padding: 2px;
+                font-size: smaller;
+            }
+            #navbar>img{
+                margin-left: 20px;
+            }
+            #newstop,#advertise,#shortnews{
+                width:790px;
+                margin: auto;
+            }
+        }
+
+        @media all and (max-width:1000px) and (min-width:829px){
+            #navbar{
+                width:600px;
+                font-size: smaller;
+                justify-content: center;
+            }
+            #navbar>div{
+                margin: 2px;
+            }
+            a{
+                padding: 4px;
+                font-size: smaller;
+            }
+            #navbar>img{
+                margin-left: 20px;
+            }
+        }
+
+        @media all and (min-width:1000px) and (max-width:1400px){
+            #navbar{
+                justify-content: center;
+                margin-left: 30px;
+
+            }
+            
+            #navbar>div{
+                margin: 4px;
+            }
+            a{
+                padding: 4px;
+                font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -252,7 +311,7 @@
             <div></div>
 
             <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1658032185.webp" alt="">
-            <h4>https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1658032185.webp</h4>
+            <h4>Poems: A Passage Through India</h4>
             <p>'The proud recognition of what we both need: to live free, educate our children, and to eat occasionally
                 as we breathe,' writes Stephen Cole about his journey. <br><span>22 July 2022</span></p>
             <div></div>
@@ -466,6 +525,14 @@
 
     function studyabroad() {
         window.location.href = "http://127.0.0.1:5500/studyabroad.html"
+    }
+
+    
+
+    document.querySelector("#logo>div:nth-child(2)>img").addEventListener("click",logohome)
+
+    function logohome(){
+        window.location.href="http://127.0.0.1:5500/index.html"
     }
 
 

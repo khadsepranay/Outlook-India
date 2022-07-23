@@ -112,6 +112,64 @@
             margin: 20px auto;
         }
 
+        @media all and (max-width:830px){
+            #topimg{
+                width: 700px;
+            }
+            #navbar{
+                width:600px;
+                font-size: smaller;
+                margin: 0%;
+            }
+            #navbar>div{
+                margin: 1px;
+            }
+            a{
+                padding: 2px;
+                font-size: smaller;
+            }
+            #navbar>img{
+                margin-left: 20px;
+            }
+            #topnews,#advertise,#shortnews{
+                width: 790px;
+            }
+        }
+
+        @media all and (max-width:1000px) and (min-width:829px){
+            #navbar{
+                width:600px;
+                font-size: smaller;
+                justify-content: center;
+            }
+            #navbar>div{
+                margin: 2px;
+            }
+            a{
+                padding: 4px;
+                font-size: smaller;
+            }
+            #navbar>img{
+                margin-left: 20px;
+            }
+        }
+
+        @media all and (min-width:1000px) and (max-width:1400px){
+            #navbar{
+                justify-content: center;
+                margin-left: 30px;
+
+            }
+            
+            #navbar>div{
+                margin: 4px;
+            }
+            a{
+                padding: 4px;
+                font-size: 12px;
+            }
+        }
+
 
 
 
@@ -408,6 +466,15 @@
 
     function studyabroad() {
         window.location.href = "http://127.0.0.1:5500/studyabroad.html"
+    }
+
+
+    
+
+    document.querySelector("#logo>div:nth-child(2)>img").addEventListener("click",logohome)
+
+    function logohome(){
+        window.location.href="http://127.0.0.1:5500/index.html"
     }
 
 
