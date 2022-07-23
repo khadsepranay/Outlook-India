@@ -16,8 +16,9 @@
         p {
             color: rgb(139, 131, 131)
         }
-        #archieves>h4+p{
-            color:rgb(200, 4, 4)
+
+        #archieves>h4+p {
+            color: rgb(200, 4, 4)
         }
 
         #middlesection {
@@ -131,19 +132,22 @@
         #stories p {
             color: rgb(203, 14, 14)
         }
-        p+div,#related>div>h4+div{
+
+        p+div,
+        #related>div>h4+div {
             border-bottom: 1px solid rgb(206, 199, 199);
             margin: 30px auto;
         }
 
-        #related{
+        #related {
             width: 90%;
             margin: auto;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap:30px;
+            gap: 30px;
         }
-        #related>div>img{
+
+        #related>div>img {
             width: 100%;
         }
     </style>
@@ -362,7 +366,8 @@
             <h2>RECOMMENDED</h2>
             <div></div>
             <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1654238872.webp" alt="">
-            <h4>Translation In World Literature: Will International Booker Prize Open A Global Window To Hindi Books?</h4>
+            <h4>Translation In World Literature: Will International Booker Prize Open A Global Window To Hindi Books?
+            </h4>
             <div></div>
             <h4>Spirit Of Shaheen Bagh: Portraits Of Courage And Sisterhood</h4>
             <div></div>
@@ -396,7 +401,8 @@
             <div></div>
             <h4>Drug Traffickers, Land Sharks And Other Lumpen Elements Now Rule The Roost In Goa</h4>
             <div></div>
-            <h4>Journey Of An Accidental Translator: Two Decades Of ‘Bengalification’ And A Long Engagement With Bangla Language</h4>
+            <h4>Journey Of An Accidental Translator: Two Decades Of ‘Bengalification’ And A Long Engagement With Bangla
+                Language</h4>
         </div>
         <div>
             <h2>ENTERTAINMENT</h2>
@@ -424,28 +430,28 @@
 </html>
 
 <script>
-    
-    let signindata=JSON.parse(localStorage.getItem("SigninData")) || []
-    if(signindata.length<1){
+
+    let signindata = JSON.parse(localStorage.getItem("SigninData")) || []
+    if (signindata.length < 1) {
         alert("Log In First")
-        window.location.href="http://127.0.0.1:5500/index.html"
+        window.location.href = "http://127.0.0.1:5500/login.html"
     }
-    if(signindata.length>0){
-        let name=document.createElement("div");
-        name.innerText=signindata[0]["Name"];
-        let blank1= document.createElement("div");
-        let blank2= document.createElement("div");
-        let logout=document.createElement("div");
-        logout.innerText="Log Out"
-        document.querySelector("#info").append(blank1,name,blank2,logout)
+    if (signindata.length > 0) {
+        let name = document.createElement("div");
+        name.innerText = signindata[0]["Name"];
+        let blank1 = document.createElement("div");
+        let blank2 = document.createElement("div");
+        let logout = document.createElement("div");
+        logout.innerText = "Log Out"
+        document.querySelector("#info").append(blank1, name, blank2, logout)
     }
 
     document.querySelector("#info>div:nth-child(4)").addEventListener("click", logout)
 
-    function logout(){
+    function logout() {
         signindata.pop();
         localStorage.setItem("SigninData", JSON.stringify(signindata))
-        window.location.href="http://127.0.0.1:5500/index.html"
+        window.location.href = "http://127.0.0.1:5500/index.html"
     }
 
 
@@ -462,30 +468,31 @@
 
     document.querySelector("#outlook>div:nth-child(2)").addEventListener("click", weekender)
 
-    function weekender(){
-        window.location.href="http://127.0.0.1:5500/weekender.html#sixth"
+    function weekender() {
+        window.location.href = "http://127.0.0.1:5500/weekender.html#sixth"
     }
 
 
     document.querySelector("#outlook>div:nth-child(4)").addEventListener("click", internationalnews)
 
-function internationalnews(){
-    window.location.href="http://127.0.0.1:5500/internationalnews.html"
-}
-
-
-
-
-    document.querySelector("#outlook>div:nth-child(3)").addEventListener("click", indianews)
-
-    function indianews(){
-        if(signindata.length>0){
-            window.location.href="http://127.0.0.1:5500/indianews.html"
-        }
-        else{
-            alert("Please Log In First");
-            return
-        }
+    function internationalnews() {
+        window.location.href = "http://127.0.0.1:5500/internationalnews.html"
     }
+
+    document.querySelector("#outlook>div:nth-child(5)").addEventListener("click", culture)
+
+    function culture() {
+        window.location.href = "http://127.0.0.1:5500/culture.html"
+    }
+
+    document.querySelector("#outlook>div:nth-child(6)").addEventListener("click", studyabroad)
+
+    function studyabroad() {
+        window.location.href = "http://127.0.0.1:5500/studyabroad.html"
+    }
+
+
+
+
 
 </script>

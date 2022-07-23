@@ -55,6 +55,9 @@
             font-weight: 700;
             cursor: pointer;
         }
+        input[type="submit"]{
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -119,11 +122,13 @@
 <script>
     let signupdata = JSON.parse(localStorage.getItem("SignupData")) || []
     let signindata=JSON.parse(localStorage.getItem("SigninData")) || []
+    console.log(signindata.length)
     document.querySelector("form").addEventListener("submit", sub)
 
     function sub(){
         event.preventDefault()
         let flag=false
+        if(signindata.length==0){
         let email=document.querySelector("#email").value;
         let mobile=document.querySelector("#email").value;
         let password=document.querySelector("#password").value;
@@ -139,6 +144,11 @@
         }
         if(flag==false){
             alert("Enter Correct Detail");
+        }   
+        }
+        else{
+            alert("Already Logged In");
+            window.location.href="http://127.0.0.1:5500/index.html"
         }
     }
 

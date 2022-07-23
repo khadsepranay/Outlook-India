@@ -91,29 +91,29 @@
             padding: 10px;
             margin-top: 20px;
         }
-        
-        #aside{
+
+        #aside {
             border-left: 1px solid gray;
             padding-left: 20px;
         }
 
-        #aside>div{
-            display:flex;
+        #aside>div {
+            display: flex;
             flex-direction: column;
         }
-        #aside img{
+
+        #aside img {
             width: 100%;
         }
 
-        #premium{
+        #premium {
             margin: 30px auto;
             background-color: rgba(228, 219, 219, 0.59);
         }
-        #premium>img{
+
+        #premium>img {
             width: 100%;
         }
-        
-
     </style>
 </head>
 
@@ -200,9 +200,11 @@
                     <p>Coalition Games: Stability And Coherence, The Defining Features Of Coalition Governments</p>
                     <p>The Sainik’s Last Stand: Unease In The House Of Marathi Manoos</p>
                     <div>
-                        <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1658487417.webp" alt="">
+                        <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1658487417.webp"
+                            alt="">
                         <h2>The Fall Of A Tall Tower – Prashant Jain Resigns As Fund Manager For Solo Venture Ahead</h2>
-                        <p>India’s longest serving fund manager Prashant Jain tenders his resignation from HDFC Mutual Fund after almost three decades.</p>
+                        <p>India’s longest serving fund manager Prashant Jain tenders his resignation from HDFC Mutual
+                            Fund after almost three decades.</p>
                     </div>
                 </div>
 
@@ -242,26 +244,35 @@
             <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1658316960.webp" alt="">
             <p>OPINION</p>
             <h4>Elevator To The Burroughs: The Growing Housing Crisis In Mumbai</h4>
-            <p>The Maximum City of Mumbai is groaning under its own weight as the metropolis continues to find ‘space’ to house all those who have made it their home</p>
+            <p>The Maximum City of Mumbai is groaning under its own weight as the metropolis continues to find ‘space’
+                to house all those who have made it their home</p>
             <p>VYJAYANTHI V. RAO/ <span>last updated at 5:51 pm</span></p>
             <hr>
             <p>ADVERTISEMENT</p>
-            <video src="https://imgnew.outlookindia.com/uploadimage/library/free_files/others/IDFC_M_2022_07_16_113422.mp4" controls muted autoplay></video>
+            <video
+                src="https://imgnew.outlookindia.com/uploadimage/library/free_files/others/IDFC_M_2022_07_16_113422.mp4"
+                controls muted autoplay></video>
             <div id="premium">
                 <p>PREMIUM</p>
                 <p>Outlook Business</p>
                 <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1657963949.webp" alt="">
                 <h3>How Can Indian Start-Ups Survive the Funding Winter</h3>
-                <p>Global events have led to a funding slowdown, but will India be an outlier? Are cautious investors still...</p>
+                <p>Global events have led to a funding slowdown, but will India be an outlier? Are cautious investors
+                    still...</p>
             </div>
             <h2>Photo Essay: The City Of Bombay That Could Have Been</h2>
-            <p>Since its founding, Bombay's administrators sanctioned but then rejected a slew of progressive plans that included everything from humane housing and expanded parks to sanitation systems. The story of Bombay</p>
+            <p>Since its founding, Bombay's administrators sanctioned but then rejected a slew of progressive plans that
+                included everything from humane housing and expanded parks to sanitation systems. The story of Bombay
+            </p>
             <p>ROBERT STEPHENS<span>/ last updated at 5:59 pm</span></p>
             <hr><br><br>
             <h3>SPONSORED ARTICLE</h3>
             <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1654572857.webp" alt="">
-            <h4>India’s longest serving fund manager Prashant Jain tenders his resignation from HDFC Mutual Fund after almost three decades.</h4>
-            <p>If you have the slightest amount of cannabis in your body for recreational or medical purposes, do you really want to get fired, fined, or jailed because of that? Definitely not! Don’t worry; the best synthetic urine on the market has got you covered.</p>
+            <h4>India’s longest serving fund manager Prashant Jain tenders his resignation from HDFC Mutual Fund after
+                almost three decades.</h4>
+            <p>If you have the slightest amount of cannabis in your body for recreational or medical purposes, do you
+                really want to get fired, fined, or jailed because of that? Definitely not! Don’t worry; the best
+                synthetic urine on the market has got you covered.</p>
         </div>
     </div>
 </body>
@@ -271,6 +282,7 @@
 </html>
 
 <script>
+    
     let signindata = JSON.parse(localStorage.getItem("SigninData")) || []
     document.querySelector("#info>div:nth-child(1)").addEventListener("click", login)
     document.querySelector("#info>div:nth-child(5)").addEventListener("click", signup)
@@ -315,7 +327,7 @@
         }
         else {
             alert("Please Log In First");
-            return
+            window.location.href="http://127.0.0.1:5500/login.html"
         }
 
     }
@@ -328,7 +340,7 @@
         }
         else {
             alert("Please Log In First");
-            return
+            window.location.href="http://127.0.0.1:5500/login.html"
         }
     }
 
@@ -340,7 +352,7 @@
         }
         else {
             alert("Please Log In First");
-            return
+            window.location.href="http://127.0.0.1:5500/login.html"
         }
     }
 
@@ -352,9 +364,36 @@
         }
         else {
             alert("Please Log In First");
-            return
+            window.location.href="http://127.0.0.1:5500/login.html"
         }
     }
+
+    document.querySelector("#outlook>div:nth-child(5)").addEventListener("click", culture)
+
+    function culture() {
+        if (signindata.length > 0) {
+            window.location.href = "http://127.0.0.1:5500/culture.html"
+        }
+        else {
+            alert("Please Log In First");
+            window.location.href="http://127.0.0.1:5500/login.html"
+        }
+    }
+
+    
+
+    document.querySelector("#outlook>div:nth-child(6)").addEventListener("click", studyabroad)
+
+    function studyabroad() {
+        if (signindata.length > 0) {
+            window.location.href = "http://127.0.0.1:5500/studyabroad.html"
+        }
+        else {
+            alert("Please Log In First");
+            window.location.href="http://127.0.0.1:5500/login.html"
+        }
+    }
+
 
 
 

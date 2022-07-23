@@ -56,6 +56,9 @@
             font-weight: 700;
             cursor: pointer;
         }
+        input[type="submit"]{
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -159,6 +162,7 @@
             document.querySelector("#password").value = ""
         if (flag == true) {
             alert("Signup Successful")
+            window.location.href="http://127.0.0.1:5500/login.html"
         }
     }
 
