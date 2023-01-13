@@ -25,25 +25,25 @@ In this project, I have made the foolowing things :
 
 ## Sign Up Page :
 
-![signup](images/Signup.png)
+![signup](Images/Signup.png)
 
 ## Home Page:
 
-![home](images/Home.png)
+![home](Images/Home.png)
 
 ## Outlook Page : 
 
-![magazine](images/Magazine.png)
+![magazine](Images/Magazine.png)
 
-![weekender](images/Weekender.png)
+![weekender](Images/Weekender.png)
 
-![national](images/National.png)
+![national](Images/National.png)
 
-![international](images/International.png)
+![international](Images/International.png)
 
-![culture](images/Culture.png)
+![culture](Images/Culture.png)
 
-![studyabroad](images/StudyAbroad.png)
+![studyabroad](Images/StudyAbroad.png)
 
 ## Learnings :
 - Implementation of HTML, CSS and JavaScript first time in a project.
