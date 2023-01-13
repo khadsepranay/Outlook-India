@@ -29,7 +29,7 @@ In this project, I have made the foolowing things :
 
 ## Home Page:
 
-![home](images/Home.png.png)
+![home](images/Home.png)
 
 ## Outlook Page : 
 
