@@ -2,9 +2,10 @@
 Got an individual project to clone Outlook India website. I have completed this project within 4 days.
 Outlook India is a daily news website, where you will find all kinds of national and international news.
 
-In this project, I have made the foolowing things :
+In this project, I have made the following things :
  - Signup Page
  - Log In Page
+ - Navbar
  - Home Page
  - Outlook Page and it's all 6 sub-categories pages.
 
